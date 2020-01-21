@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: auto;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: 'Bigelow Rules','poppins',sans-serif;
+  font-size: 72px;
+  color: #0ccac4;
+}
+
+input{
+  outline: none;
+  margin: 1%;
+  width: 320px;
+  padding: 20px;
+  border: 1px solid #939393;
+  border-radius: 25px;
+}
+p{
+  transition: 0.8s ease;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,44 @@
+
+
+.card-container {
+    align-items: center;
+    text-align: center;
+    margin: 1.5%;
+  min-width:300px;
+    height: 300px;
+font-size: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #95dada;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+.card-container img:hover{
+    transition: transform 0.5s ease-in-out;
+    animation: spin 1s ease-in-out;
+    transform-origin: center;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+
+}
+
+@keyframes spin {
+    from {
+        transform-origin: center;
+
+        transform: rotate(0deg);
+    }
+    to {
+        transform-origin: center;
+
+        transform: rotate(360deg);
+    }
+}
